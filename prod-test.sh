@@ -1,5 +1,5 @@
 function test {
-    domain="https://ixchelgowu.duckdns.org"
+    domain="https://www.ixchelgowu.duckdns.org"
     declare -a endpoints=("" "health" "register" "login" "ixchel")
 
     # random users and passwords
