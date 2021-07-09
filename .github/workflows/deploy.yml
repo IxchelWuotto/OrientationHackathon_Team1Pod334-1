@@ -37,6 +37,7 @@ jobs:
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚨 Deployment Failed"
 
       - name: Discord
+        if: ${{ success() }}
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
 
       - name: Access to Git repository
